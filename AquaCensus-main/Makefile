@@ -1,2 +1,2 @@
 all:
-	google-chrome main.html
+	google-chrome index.html

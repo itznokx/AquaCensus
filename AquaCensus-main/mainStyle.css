@@ -1,0 +1,125 @@
+* { 
+	/* isso que permite nao gerar bordas aooo longo da pagina */
+	margin: 0; 
+}
+
+#waves-collumn-login{
+	background-image: url('srcImages/wavesImg.png');
+	height: 100vh;
+	width:49%;
+}
+#register-collumn-login{
+	background-color: rgb(255, 255, 255);
+	justify-content:center;
+	align-items:center;
+	text-align:center;
+}
+.register-label{
+	padding-left: 1.5rem;
+	font-size: 22px;
+	font-weight: bold;
+	margin:auto;
+}
+.register-label img {
+	height: 42px;
+	width: 43px;
+}
+
+.logo-img {
+	width: 55%;
+}
+
+.div-logo {
+	padding-left: 3.5rem;
+}
+
+.register-input{
+	height:39px;
+	width: 340px;
+	font-size: 17px;
+}
+
+
+/* section que comanda as duas colunas */
+.pagina {
+	height: 100vh;
+	display: flex;
+}
+
+.metade-login  {
+	padding: 5rem 2.5rem 10rem 0rem;
+	width: 50%;
+}
+
+.metade-waves {
+	width: 50%;
+}
+
+.mail-img {
+	position: relative;
+	top: 13px;
+	width: 45px;
+}
+
+.lock-img {
+	position: relative;
+	top: 13px;
+	width: 47px;
+}
+
+.div-mail {
+	padding-top: 0.2rem;
+	padding-bottom: 0.5rem;
+}
+
+.div-lock {
+	padding-bottom: 3rem;
+}
+
+.div-btn-login {
+	padding-left: 3rem;
+	.login-button{
+		width: 49%;
+		height: 5dvh;
+		position: relative;
+		font-size: 1.6rem;
+		font-weight: bold;
+		border: 4px solid #0099FF;
+		border-radius: 2rem;
+		color:white;
+		background-color: #0099FF;
+		text-align: center;
+		margin-bottom: 1rem;
+		&:hover {
+			cursor:pointer;
+			background-color: #1291b5;
+			border: 4px solid #1291b5;
+		}
+	}
+	
+}
+
+.div-btn-cadastrar{
+	padding-left: 3rem;
+	.cadastrar-button{
+		width: 49%;
+		height: 5dvh;
+		position: relative;
+		font-size: 1.6rem;
+		font-weight: bold;
+		border: 4px solid #0099FF;
+		border-radius: 2rem;
+		color:white;
+		background-color: #0099FF;
+		text-align: center;
+		margin-bottom: 1rem;
+	
+		&:hover {
+			cursor:pointer;
+			background-color: #1291b5;
+			border: 4px solid #1291b5;
+	
+		}
+	}
+	
+}

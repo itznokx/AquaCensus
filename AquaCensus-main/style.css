@@ -435,3 +435,33 @@ h2 {
 	border: none;
 	background-color: #ddd;
   }
+
+  .titulo-campo3 {
+	padding-left: 2rem;
+	padding-top: 0rem;
+	margin-right: 2.5rem !important;
+	font-size: 1.6rem !important;
+  }
+
+  .cadastro-campo-medida {
+	margin-top: 0.5rem;
+	margin-left: 2rem;
+	width: 270px;
+	padding: 0.5rem;
+	font-size: 1.5rem;
+	border-radius: 10px;
+	border: none;
+	background-color: #ddd;
+  }
+
+  .medidas {
+	display: grid;
+
+	font-weight: 600;
+  }
+
+  .row-nomes {
+	display: flex;
+	justify-content: space-between !important;
+
+  }

@@ -2,18 +2,37 @@ require('dotenv').config();
 const express = require('express');
 const app = express();
 const sequelize = require('./config/database');
+const path = require('path');
+const cors = require('cors');
+
+app.use(cors());
+
+app.use(express.static(path.join(__dirname, 'public')));
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'views', 'index.html')); // Enviar arquivo HTML
+});
 
 // Middleware para JSON
 app.use(express.json());
 
-// Importar rotas
+// Configurando diretório de arquivos estáticos
+app.use(express.static(path.join(__dirname, 'public')));
+
+// Importando rotas
 const laboratorioRoutes = require('./routes/laboratorio');
 const embarcacaoRoutes = require('./routes/embarcacao');
 const usuarioRoutes = require('./routes/usuario');
 const coletaRoutes = require('./routes/coleta');
 const favoritoRoutes = require('./routes/favorito');
 
-// Usar as rotas
+// Definir rotas para as páginas estáticas
+app.get('/', (req, res) => {res.sendFile(path.join(__dirname, 'views', 'index.html'))}); // Página de Login
+app.get('/home', (req, res) => {res.sendFile(path.join(__dirname, 'views', 'home.html'))}); // Página Principal
+app.get('/cadastro', (req, res) => {res.sendFile(path.join(__dirname, 'views', 'cadastro.html'))}); // Página de Cadastro
+app.get('/favoritos', (req, res) => {res.sendFile(path.join(__dirname, 'views', 'favoritos.html'))}); // Página de Favoritos
+app.get('/cadastrar-especie', (req, res) => {res.sendFile(path.join(__dirname, 'views', 'cadastrar-especie.html'))}); // Página de Cadastrar Coleta
+
+// Usarndo as rotas
 app.use('/laboratorios', laboratorioRoutes);
 app.use('/embarcacoes', embarcacaoRoutes);
 app.use('/usuarios', usuarioRoutes);

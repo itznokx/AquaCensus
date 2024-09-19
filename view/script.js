@@ -65,6 +65,16 @@ document.addEventListener('DOMContentLoaded', function() {
     
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    const coletasbutton = document.getElementById('coletas-btn')
+
+    coletasbutton.addEventListener('click', function() {
+        window.location.href = 'coletas.html';
+
+    })
+    
+});
+
 // Selecting the username element and dropdown
 const userName = document.getElementById('user-name');
 const dropdown = document.getElementById('dropdown');

@@ -1,51 +1,95 @@
-<html></html>
-	<head> 
-		<title>Favoritos</title>
-		<link rel="stylesheet" type="text/css" href="../public/css/style.css">
-	</head>
-	<body>
-		<section class="pagina">
+<html>
+  <head>
+    <title>Favoritos - AquaCensus</title>
+    <link rel="stylesheet" type="text/css" href="../public/css/style.css">
+  </head>
+  <body>
+    <section class="favorites-page">
+      
+      <!-- Header Section -->
+      <div class="header">
+        <span class="registro-logo">AQUACENSUS</span>
 
-			<div class="metade-waves" id="waves-collumn-login">
-			</div>
+        <input type="text" class="search-bar" placeholder="Buscar...">
+        <div class="user-info">
+          <img class="profile-img" src="../public/srcImages/profile-image.png" alt="Profile Image">
+          <div class="user-details">
+            <!-- Clickable Username -->
+            <span class="user-name" id="user-name">João da Silva</span>
+            <span class="user-role">Pesquisador</span>
+            
+            <!-- Dropdown Menu -->
+            <div class="dropdown" id="dropdown">
+              <ul>
+                <li class="favorito-btn" id="favorite-btn">★ Favoritos</li>
+                <li class="coletas-btn" id="coletas-btn">Coletas</li>
+                <li id="especie-btn" id="especie-btn">Cadastrar</li>
+                <li class="conta-btn" id="conta-btn">Conta</li>
+                <li>Tema</li>
+                <li>Fonte</li>
+                <li>Gerar Código</li>
+                <li>Desativar conta</li>
+                <li class="sair-btn" id="sair-btn">Sair</li> <!-- Alterei -->
 
-			<div class="metade-login" id="register-collumn-login" >
-				<div class="div-logo">
-					<img class="logo-img" src="../public/srcImages/aquacensus-logo.png">
-	
-				</div>
-	
-				<div class="div-mail">
-					<label class="register-label ">
-						cadastroo:
-					</label>
-					
-					<input type="text" class="register-input"></input>
-					<img src="../public/srcImages/mail.png" class="mail-img">
-				</div>
-				
-				<div class="div-lock">
-					<label class="register-label">
-						cadastro:
-						<input type="password" class="register-input"></input>					
-					</label>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
 
-					<img src="../public/srcImages/lock.png" class="lock-img">
-				</div>
-				
-				<div class="div-btn-login">
-					<button type="button" class="login-button">Entrar</button>
-				</div>
+      <div class="registro-container">
 
-				<div class="div-btn-cadastrar">
-					<button type="button" class="cadastrar-button">Cadastrar</button>
-				</div>
-			</div>
+      
+        <div class="registro-body">
+          <div class="registro-foto-container">
+            <div class="registro-foto-principal"></div>
 
-			
-			
-		</section>
-			
-	</body>
+            <div class="registro-info">
+                <label class="titulo-campo">Nome</label>
+                <input type="text" class="cadastro-campo" placeholder="">   
+                
+                <label class="titulo-campo">Cargo</label>
+                <input type="text" class="cadastro-campo" placeholder="">      
+             </div>
 
+          </div>
+		  <div class="registro-detalhes">
+            
+      
+            <div class="registro-info-cadastro">
+              <label class="titulo-campo2">Email</label>
+              <input type="text" class="cadastro-campo2" placeholder="">  
+            </div>
+      
+            <div class="registro-info-cadastro">
+              <label class="titulo-campo2">Laboratório</label>
+              <input type="text" class="cadastro-campo2" placeholder="">  
+            </div>
+      
+            <div class="registro-info-cadastro">
+              <label class="titulo-campo2">Senha</label>
+              <input type="text" class="cadastro-campo2" placeholder="">  
+            </div>
+
+            <div class="registro-info-cadastro">
+                <label class="titulo-campo2">Código de cadastro</label>
+                <input type="text" class="cadastro-campo2" placeholder="">  
+              </div>
+      
+
+              <div class="div-btn-cadastrar-especie">
+              <button type="button" class="cadastrar-button" >Cadastrar-se</button>
+            </div>
+      
+           
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+    <div class="footer"></div>
+
+    <script src="script.js"></script>
+  </body>
 </html>

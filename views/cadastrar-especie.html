@@ -8,7 +8,7 @@
       
       <!-- Header Section -->
       <div class="header">
-        <span class="registro-logo">AQUACENSUS</span>
+        <span class="registro-logo" id="registro-logo">AQUACENSUS</span>
 
         <input type="text" class="search-bar" placeholder="Buscar...">
         <div class="user-info">
@@ -29,7 +29,7 @@
                 <li>Fonte</li>
                 <li>Gerar Código</li>
                 <li>Desativar conta</li>
-                <li>Sair</li>
+                <li class="sair-btn" id="sair-btn">Sair</li> <!-- Alterei -->
 
               </ul>
             </div>
@@ -42,12 +42,15 @@
       
         <div class="registro-body">
           <div class="registro-foto-container">
-            <div class="registro-foto-principal"></div>
+            <div class="registro-foto-principal" id="foto-principal"></div>
+            <input type="file" id="input-foto-principal" accept="image/*" style="display: none">
             
             <div class="registro-fotos-secundarias">
-              <div class="registro-foto-secundaria"></div>
-              <div class="registro-foto-secundaria"></div>
-              
+              <div class="registro-foto-secundaria" id="foto-secundaria-1"></div>
+              <input type="file" id="input-foto-secundaria-1" accept="image/*" style="display: none">
+
+              <div class="registro-foto-secundaria" id="foto-secundaria-2"></div>
+              <input type="file" id="input-foto-secundaria-2" accept="image/*" style="display: none">
             </div>
 
             <div class="registro-info">
@@ -90,7 +93,10 @@
                <input type="text" class="cadastro-campo-medida" placeholder="Nome da Espécie">  
               </div>
             </div>
-      
+            
+            <div class="div-btn-cadastrar-especie">
+              <button type="button" class="cadastrar-button" >Cadastrar Espécie </button>
+            </div>
            
           </div>
         </div>

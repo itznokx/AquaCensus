@@ -1,4 +1,4 @@
-const Laboratorio = require('../models/laboratorio');
+const Laboratorio = require('../models/Laboratorio');
 
 exports.getAllLaboratorios = async (req, res) => {
   try {

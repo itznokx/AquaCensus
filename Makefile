@@ -1,2 +1,3 @@
 all:
-	google-chrome main.html
+	node app.js
+	firefox localhost:3000

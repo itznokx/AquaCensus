@@ -1,7 +1,7 @@
 <html></html>
   <head>
     <title>Favoritos - AquaCensus</title>
-    <link rel="stylesheet" type="text/css" href="../public/css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <section class="favorites-page">
@@ -12,7 +12,7 @@
 
         <input type="text" class="search-bar" placeholder="Buscar...">
         <div class="user-info">
-          <img class="profile-img" src="../public/srcImages/profile-image.png" alt="Profile Image">
+          <img class="profile-img" src="srcImages/profile-image.png" alt="Profile Image">
           <div class="user-details">
             <!-- Clickable Username -->
             <span class="user-name" id="user-name">João da Silva</span>
@@ -55,7 +55,7 @@
 
             <div class="registro-info">
                 <label class="titulo-campo">Nome Científico</label>
-                <input type="text" class="cadastro-campo" placeholder="Nome da Espécie">             
+                <input type="text" class="cadastro-campo" id="cadastro-nome-cientifico" placeholder="Nome da Espécie">             
              </div>
           </div>
       
@@ -64,12 +64,12 @@
       
             <div class="registro-info">
               <label class="titulo-campo2">Número da Embarcação</label>
-              <input type="text" class="cadastro-campo2" placeholder="Nome da Espécie">  
+              <input type="text" class="cadastro-campo2" id="cadastro-embarcacao" placeholder="Nome da Espécie">  
             </div>
       
             <div class="registro-info">
               <label class="titulo-campo2">Data</label>
-              <input type="text" class="cadastro-campo2" placeholder="Nome da Espécie">  
+              <input type="text" class="cadastro-campo2" id="cadastro-data" placeholder="Nome da Espécie">  
             </div>
       
             <div class="registro-info">
@@ -79,7 +79,7 @@
       
             <div class="registro-info">
               <label class="titulo-campo2">Nome Comum</label>
-              <input type="text" class="cadastro-campo2" placeholder="Nome da Espécie">  
+              <input type="text" class="cadastro-campo2" id="cadastro-nome-comum" placeholder="Nome da Espécie">  
             </div>
       
             <div class="medidas">
@@ -89,13 +89,13 @@
                 </div>
 
               <div class="row-campos">
-                <input type="text" class="cadastro-campo-medida" placeholder="Nome da Espécie">  
-               <input type="text" class="cadastro-campo-medida" placeholder="Nome da Espécie">  
+                <input type="text" class="cadastro-campo-medida" id="cadastro-peso-especie" placeholder="Peso da Espécie">  
+               <input type="text" class="cadastro-campo-medida" id="cadastro-comprimento-especie" placeholder="Comprimento da Espécie">  
               </div>
             </div>
             
             <div class="div-btn-cadastrar-especie">
-              <button type="button" class="cadastrar-button" >Cadastrar Espécie </button>
+              <button type="button" class="cadastrar-button" id="especie-btn" >Cadastrar Espécie </button>
             </div>
            
           </div>
@@ -106,6 +106,6 @@
 
     <div class="footer"></div>
 
-    <script src="../public/js/script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

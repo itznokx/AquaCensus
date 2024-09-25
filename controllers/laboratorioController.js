@@ -1,4 +1,5 @@
-const Laboratorio = require('../models/Laboratorio');
+// Definindo os métodos que serão usados para manipular os dados na tabela laboratorio
+const Laboratorio = require('../models/laboratorio');
 
 exports.getAllLaboratorios = async (req, res) => {
   try {

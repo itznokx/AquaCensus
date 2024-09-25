@@ -1,3 +1,4 @@
+// Definindo os métodos que serão usados para manipular os dados na tabela coleta
 const Coleta = require('../models/Coleta');
 
 exports.getAllColetas = async (req, res) => {

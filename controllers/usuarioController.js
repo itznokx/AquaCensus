@@ -1,3 +1,4 @@
+// Definindo os métodos que serão usados para manipular os dados na tabela usuário
 const Usuario = require('../models/Usuario');
 const sequelize = require('../config/database'); //lembrete importante
 const bcrypt = require('bcrypt');
@@ -44,6 +45,8 @@ exports.loginUsuario = async (req, res) => {
         id: usuario.id_user,
         nome: usuario.nome,
         email: usuario.email,
+        cargo: usuario.cargo,
+        foto: usuario.foto_perfil,
         is_admin: usuario.is_admin,
       },
     });

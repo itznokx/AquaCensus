@@ -1,3 +1,4 @@
+// Definindo o modelo Sequelize de Usuario que mapeia a tabela correspondente no banco de dados
 const { DataTypes } = require('sequelize');
 const sequelize = require('../config/database');
 const Laboratorio = require('./Laboratorio');

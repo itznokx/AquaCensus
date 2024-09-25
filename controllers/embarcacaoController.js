@@ -1,3 +1,4 @@
+// Definindo os métodos que serão usados para manipular os dados na tabela embarcacao
 const Embarcacao = require('../models/Embarcacao');
 
 exports.getAllEmbarcacoes = async (req, res) => {

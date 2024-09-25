@@ -1,3 +1,4 @@
+// Definindo os métodos que serão usados para manipular os dados na tabela favorito
 const Favorito = require('../models/Favorito');
 
 exports.getAllFavoritos = async (req, res) => {

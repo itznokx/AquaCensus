@@ -1,3 +1,4 @@
+// Configurando e inicializando a conexão com o PostgreSQL usando o ORM Sequelize
 require('dotenv').config();
 const { Sequelize } = require('sequelize');
 

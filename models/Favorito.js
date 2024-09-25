@@ -1,3 +1,4 @@
+// Definindo o modelo Sequelize de Favorito que mapeia a tabela correspondente no banco de dados
 const { DataTypes } = require('sequelize');
 const sequelize = require('../config/database');
 const Usuario = require('./Usuario');
